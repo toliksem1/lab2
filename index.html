@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2 - Варіант 2</title>
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- контейнер <style> -->
+    <style>
+         /* Селектор тегу  */
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        /* Стилі для радіо */
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .radio-group label {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        /* залежить від checked у radio */
+        input[type="radio"]:checked {
+            outline: 2px solid #e74c3c;
+            box-shadow: 0 0 8px #e74c3c;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Звіт з лабораторної роботи №2</h1>
+    <!-- Inline стиль -->
+    <p style="color: #e67e22; font-size: 18px; font-weight: bold;">
+        Цей текст використовує inline-опис стилю (атрибут style).
+    </p>
+    <h2>Демонстрація селекторів</h2>
+    <!-- Селектор класу -->
+    <p class="text-class">Цей текст стилізовано за допомогою селектора класу.</p>
+    <!-- Селектор ідентифікатора -->
+    <p id="unique-id">Цей текст стилізовано за допомогою селектора ідентифікатора.</p>
+    <h2>Властивість Position</h2>
+    <div class="position-container">
+        <p>Цей блок має position: relative. Відносно нього позиціонується червоний квадрат.</p>
+        <div class="absolute-box">Absolute</div>
+    </div>
+    <h2>Властивість Float</h2>
+    <div class="float-container">
+        <div class="float-box"></div>
+        <p>Цей текст обтікає зелений блок зліва. Властивість float (float: left) змушує елемент "плавати" зліва, а текст, що йде після нього, переноситься та обтікає його справа. Це дуже зручно використовувати для картинок або навігаційних меню.</p>
+    </div>
+    <hr style="margin: 40px 0;">
+    <!-- ВАРІАНТ 2-->
+    <h1 style="text-align: center; color: #8e44ad;">Завдання за варіантом 2</h1>
+    <!-- Радіо-кнопки -->
+    <h2>1. Перемикачі (radio), оформлення яких залежить від стану</h2>
+    <p>Натисни на кнопку нижче, щоб побачити, як змінюється її стиль за допомогою псевдокласу <code>:checked</code>:</p>
+    
+    <div class="radio-group">
+        <label>
+            <input type="radio" name="variant" value="1"> Варіант 1
+        </label>
+        <label>
+            <input type="radio" name="variant" value="2"> Варіант 2
+        </label>
+        <label>
+            <input type="radio" name="variant" value="3"> Варіант 3
+        </label>
+    </div>
+
+    <!-- Flexbox та order -->
+    <h2>2. Flexbox та властивість order</h2>
+    <p> Додати на сторінку контейнер з елементами, розміщеними згідно малюнку. Зверніть увагу, що в HTML-коді елементи розміщені по порядку "1", "2", "3", "4". А за допомогою Flexbox і CSS-властивості order, початковий порядок має бути змінений на той, що відповідає наведеному зображенню.</p>
+    
+    <div class="flex-container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Загальні стилі */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+h1 {
+    text-align: center;
+}
+/* Селектор класу */
+.text-class {
+    color: #2980b9;
+    font-style: italic;
+    background-color: #e3f2fd;
+    padding: 5px;
+}
+/* Селектор ідентифікатора */
+#unique-id {
+    color: #c0392b;
+    font-weight: bold;
+    border-left: 4px solid #c0392b;
+    padding-left: 10px;
+}
+/* Стилі для Position */
+.position-container {
+    position: relative; /* по завданню */
+    height: 120px;
+    background-color: #dfe6e9;
+    padding: 10px;
+    padding-right: 92px; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Стилі для Float */
+.float-container {
+    background-color: #f1f2f6;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden; /* Запобігає виходу за межі контейнера*/
+}
+/* зелений квадрат */
+.float-box {
+    float: left; 
+    width: 80px;
+    height: 80px;
+    background-color: #2ecc71;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+/*ВАРІАНТ 2*/
+/* Flexbox контейнер*/
+.flex-container {
+    display: flex;               /* Вмикаємо Flexbox */
+    background-color: #888888;   /* Сірий фон*/
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center; 
+    border-radius: 10px;
+}
+/* Загальні стилі для квадратів */
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: serif; /* стиль тексту*/
+    color: black;
+}
+/* order має бути: 3(синій), 4(червоний), 1(зелений), 2(синій) */
+.box-3 {
+    order: 1; /* Перший візуально */
+    background-color: blue;
+}
+
+.box-4 {
+    order: 2; /* Другий візуально */
+    background-color: red;
+}
+
+.box-1 {
+    order: 3; /* Третій візуально */
+    background-color: green;
+}
+
+.box-2 {
+    order: 4; /* Четвертий візуально */
+    background-color: blue;
+}
